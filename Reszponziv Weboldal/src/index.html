@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      min-width: 400px;
+      background-image: url(bg.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      background-color: rgba(255, 0, 0, 0.3);
+      color: white;
+      font-size: 2.5em;
+      margin: 2vh 10vw;
+      text-align: center;
+    }
+    .golf-ball-frame {
+      border: 10px solid rgba(255, 0, 0, 0.9);
+      border-radius: 25px;
+      width: 50vw;
+      margin: 2vh auto; 
+    }
+    .golf-ball-frame img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 10px;
+      transition: transform .2s;
+    }
+    .golf-ball-frame img:hover {
+      transform: scale(1.1);
+    }
+    .golf-ball-frame label {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+        margin-top: 1vh;
+      }
+      .golf-ball-frame {
+        width: 100%;
+        margin: 2vh 0;
+      }
+      .golf-ball-frame img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Portsmouth Golf Centre</h1>
+  <div class="golf-ball-frame">
+    <img src="golfBall.png" alt="Player">
+    <label>Player</label>
+    <img src="golfBall.png" alt="Contact">
+    <label>Contact</label>
+  </div>
+</body>
+</html>

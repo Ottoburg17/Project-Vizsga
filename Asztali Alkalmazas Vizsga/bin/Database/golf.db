@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS Results (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    player TEXT,
+    tournament TEXT,
+    round1 INTEGER,
+    round2 INTEGER,
+    round3 INTEGER,
+    round4 INTEGER
+);
